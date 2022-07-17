@@ -1,0 +1,17 @@
+h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 20% 0 0.5rem 0;
+    background: -webkit-linear-gradient(#fff, #999);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+body {
+    background-image: url('{{ image }}');
+    background-color: #5c4084;  
+    background-size: 100%;
+}

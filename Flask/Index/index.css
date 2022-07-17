@@ -1,0 +1,834 @@
+/* html { width: 100%; height:100%; overflow:hidden; } */
+
+/*
+body {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #ac44a3b4;
+}
+*/
+
+/*
+body {
+  padding: 100px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  margin: auto;
+
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+}
+
+*/
+
+
+ /*body {
+  background-image: url("background_0.jpg");
+  background-color: #cccccc;
+}*/
+
+/*#5c4084*/
+
+body {
+  background-color: #5c4084;
+}
+
+body {
+  /* background: -moz-linear-gradient(top,  rgb(165, 111, 241) 50%, rgba(156, 51, 134, 0.63) 75%); */
+  /* background: -moz-radial-gradient(50% 50%, ellipse cover, rgba(18, 107, 158, 0.479) 50%, rgba(16, 173, 89, 0.753) 75%);*/
+   /*background: -moz-radial-gradient(50% 50%, ellipse cover, rgba(0, 255, 221, 0.911) 50%,rgba(39, 64, 202, 0.712) 75%),-moz-linear-gradient(top,  rgb(19, 179, 85) 40%, rgba(31, 165, 87, 0.4) 100%), -moz-linear-gradient(-45deg,  #276fce 0%, #6f33b4 100%);*/
+}
+
+#Sana {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 1%;
+  z-index: 0;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  /* perspective: 1000px; */
+}
+
+#Finland {
+  /* transition: transform 0.8s; */
+  /* transform: rotateY(180deg); */
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 1%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  /* perspective: 1000px; */
+}
+
+.sana:hover .name {
+  z-index: 0;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.sana:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.sana:active .country {
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.sana:active #Sana {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.sana:active #Finland {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+
+#Alberto {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 11%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#Argentina {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 11%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.alberto:hover .name {
+  right: 11%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.alberto:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.alberto:active .country {
+  z-index: 2;
+  right: 11%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.alberto:active #Alberto {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.alberto:active #Argentina {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Carlos {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 21%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#Costa_Rica {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 21%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.carlos:hover .name {
+  right: 21%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.carlos:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.carlos:active .country {
+  z-index: 2;
+  right: 21%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.carlos:active #Carlos {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.carlos:active #Costa_Rica {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Felix {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 31%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#DRC {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 31%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.felix:hover .name {
+  right: 31%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.felix:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.felix:active .country {
+  z-index: 2;
+  right: 31%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.felix:active #Felix {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.felix:active #DRC {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Ivan {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 41%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#Columbia {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 41%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.ivan:hover .name {
+  right: 41%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.ivan:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.ivan:active .country {
+  z-index: 2;
+  right: 41%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.ivan:active #Ivan {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.ivan:active #Columbia {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Jacinda {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 51%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#NZ {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 51%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.jacinda:hover .name {
+  right: 51%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.jacinda:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.jacinda:active .country {
+  z-index: 2;
+  right: 51%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.jacinda:active #Jacinda {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.jacinda:active #NZ {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Joe {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 61%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#USA {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 61%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.joe:hover .name {
+  right: 61%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.joe:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.joe:active .country {
+  z-index: 2;
+  right: 61%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.joe:active #Joe {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.joe:active #USA {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Narendra {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 71%;
+  z-index: 0;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#India {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 71%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.narendra:hover .name {
+  right: 71%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.narendra:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.narendra:active .country {
+  z-index: 2;
+  right: 71%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.narendra:active #Narendra {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.narendra:active #India {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Tsai {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 81%;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#Taiwan {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 81%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.tsai:hover .name {
+  right: 81%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.tsai:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.tsai:active .country {
+  z-index: 2;
+  right: 81%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.tsai:active #Tsai {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.tsai:active #Taiwan {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+#Vladimir {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 91%;
+  z-index: 0;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+#Russia {
+  position: fixed;
+  border-radius: 50%;
+  width: 9%;
+  height: 30%;
+  top: 0;
+  right: 91%;
+  z-index: -1;
+  transform: rotateY(90deg);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+.vladimir:hover .name {
+  right: 91%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+  z-index: 0;
+}
+
+.vladimir:active .name {
+  z-index: -1;
+  color: rgb(0, 0, 0, 0);
+  background-color: rgb(255, 255, 255, 0);
+}
+
+.vladimir:active .country {
+  z-index: 2;
+  right: 91%;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255, 0.4);
+}
+
+.vladimir:active #Vladimir {
+  transition: transform 1.5s;
+  transform: rotateY(180deg);
+}
+
+.vladimir:active #Russia {
+  transition: transform 1.5s;
+  transform: rotateY(0deg);
+  /* animation-delay: 0.8s; */
+  z-index: 1;
+}
+
+/* .upload {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+} */
+
+/*
+.upload {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+.form {
+  width: 400px;
+}
+
+.input_div{
+  height: 60px;
+
+  position: relative;
+  width: 100%;
+}
+
+.input_div:after {
+  content: attr(data-text);
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 10px 15px;
+  display: block;
+  width: calc(100% - 40px);
+  pointer-events: none;
+  z-index: 20;
+  height: 60px - 20px;
+  line-height: 60px - 20px;
+  color: #999;
+  border-radius: 5px 10px 10px 5px;
+  font-weight: 300;
+}
+
+.input_div:before {
+  content: 'Upload';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  height: 60px;
+  background: #4daf7c;
+  color: #fff;
+  font-weight: 700;
+  z-index: 25;
+  font-size: 16px;
+  line-height: 60px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.input_div:hover .input_div:before {
+    background: darken(#4daf7c, 10%);
+}
+
+input {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  height: 60px - 20px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+*/
+
+.name {
+  background-color: rgb(255, 255, 255, 0);
+  position: absolute;
+/*title is positioned at the top of container div*/
+  top: 0%;
+  width: 9%;
+  right: 1%;
+  color: rgb(0, 0, 0, 0);
+  font-size: 25px;
+  padding: 15px 0;
+  text-align: center;
+/*title div is at the back of container and hence not visible*/
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 50%;
+
+  opacity: 100%;
+}
+
+.country {
+  background-color: rgb(255, 255, 255, 0);
+  position: absolute;
+/*title is positioned at the top of container div*/
+  top: 22%;
+  width: 9%;
+  /* height: 8%; */
+  right: 1%;
+  color: rgb(0, 0, 0, 0);
+  font-size: 25px;
+  padding: 15px 0;
+  text-align: center;
+/*title div is at the back of container and hence not visible*/
+  z-index: -1;
+  transition: 0.5s;
+  border-radius: 75%;
+
+  opacity: 100%;
+}
+
+/* .upload {
+  padding: 4rem 5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 20%;
+  max-width: 45rem;
+  position: absolute;
+  top: 48%;
+  left: 35%;
+} */
+
+.upload {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 25%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 20px;
+}
+
+/* .upload .input_div input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+} */
+
+.uploadButton{
+  display:none;
+}
+
+.uploadLabel {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 7px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: rgb(186, 15, 238);
+  color: #ffffff;
+}
+
+
+/*
+
+.upload {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  margin: auto;
+  margin: 20 0 0 450px;
+  padding: 20px;
+  background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top,  rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg,  #670d10 0%, #092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg,  #670d10 0%,#092756 100%);
+  background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+  border-radius: 15px ;
+}
+
+*/
+
+h1 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 20% 0 0.5rem 0;
+  background: -webkit-linear-gradient(#fff, #999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+h4 {
+  color: lighten(#5c3d86,30%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 3.5rem 0;
+  background: -webkit-linear-gradient(#fff, #999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
